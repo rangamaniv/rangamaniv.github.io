@@ -1,28 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My GitHub Repositories</title>
+    <title>Rangamani Varadachary</title>
 </head>
 <body>
-    <h1>My GitHub Repositories</h1>
-    <ul id="repositories-list"></ul>
-
-    <script>
-        // Replace 'your-username' with your GitHub username
-        fetch('https://api.github.com/users/your-username/repos')
-            .then(response => response.json())
-            .then(data => {
-                const repositoriesList = document.getElementById('repositories-list');
-                data.forEach(repo => {
-                    const listItem = document.createElement('li');
-                    const link = document.createElement('a');
-                    link.href = repo.html_url;
-                    link.textContent = repo.name;
-                    listItem.appendChild(link);
-                    repositoriesList.appendChild(listItem);
-                });
-            })
-            .catch(error => console.error(error));
-    </script>
+   
 </body>
 </html>
